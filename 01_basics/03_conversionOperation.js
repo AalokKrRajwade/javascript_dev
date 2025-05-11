@@ -40,3 +40,22 @@ console.log(typeof newScore3);
 // 0 => false
 // "" => false
 // "abc" => true
+
+/********************** Operations *******************/
+console.log("Operations: ")
+// console.log(2+3)
+// console.log(2-3)
+// console.log(2/3)
+console.log(2*3)
+console.log(2**3) // 2^3 = 8
+
+console.log(1+2)
+console.log("1"+2)
+console.log(1+"2")
+console.log("1"+2+2)
+console.log(1+2+"2")
+
+// console.log(true) => true
+// console.log(+true) => 1
+// console.log(true+) => error
+// console.log(+"") => 0
