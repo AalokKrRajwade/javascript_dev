@@ -26,9 +26,32 @@ let myObj = {
 }
 
 // function: 
-const myfunc = function(){
+const myfunc = function () {
     console.log("Hello world!");
 }
 
 console.log(typeof myfunc);
 console.log(typeof null);
+
+/********************************************************/
+
+// stack merory is used by "Primitive data-types"
+// Heap memory is used by "Non-Primitive data-types"
+
+let myName = "Harry";
+let anotherName = myName;
+anotherName = "Aalok";
+
+console.log(myName);
+console.log(anotherName);
+
+let user1 = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let user2 = user1;
+user2.email = "hitesh@google.com";
+
+console.log(user1.email);
+console.log(user2.email);
