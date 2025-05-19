@@ -52,7 +52,7 @@ function addone(num){
 }
 // console.log(addone(5))
 
-addTwo(5) // gives error
+addTwo(5) // gives error (called hoisting)
 const addTwo = function(num){
     return num + 2
 }
