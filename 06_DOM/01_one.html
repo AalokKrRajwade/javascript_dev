@@ -1,0 +1,56 @@
+<!-- DOM (Document Object Model) -->
+<!-- DOM connects web pages to scripts or programming languages by representing the structure of a document—such 
+as the HTML representing a web page—in memory. Usually it refers to JavaScript, even though modeling HTML, SVG, or
+XML documents as objects are not part of the core JavaScript language. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div id="title">
+        <h1 class="heading">DOM learning starts: </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, vitae?</p>
+    </div>
+</body>
+</html>
+
+
+<!--
+HTML DOM Tree Diagram:
+
+window
+    |
+    |
+  document
+    |
+    └── <html>
+        ├── <head>
+        │     ├── <title>
+        │     │     └── "Page Title"
+        │     └── <meta>
+        |
+        └── <body>
+                ├── <header>
+                │     └── <h1>--(attribute) & (text node)
+                │           └── "Welcome to My Website"
+                ├── <nav>
+                │    
+                ├── <section>
+                │     ├── <h2>
+                │     │     └── "Section Title"
+                │     └── <p>
+                │           └── "This is a paragraph."
+                └── <footer>
+                    └── <p>
+                            └── "Footer Text"
+-->
