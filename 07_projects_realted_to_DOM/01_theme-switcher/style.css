@@ -5,6 +5,7 @@ html {
 span {
   display: block;
 }
+
 .canvas {
   margin: 100px auto 100px;
   width: 80%;
@@ -18,16 +19,22 @@ span {
   display: inline-block;
 }
 
+#white {
+  background: white;
+}
+
 #grey {
   background: grey;
 }
 
-#white {
-  background: white;
-}
 #blue {
   background: blue;
 }
+
 #yellow {
   background: yellow;
+}
+
+#green {
+  background: rgb(13, 121, 3);
 }
