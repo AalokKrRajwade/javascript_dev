@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+            color: aliceblue;
+        }
+
+        td,
+        th {
+            border: 1px solid aliceblue;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<!-- API stands for Application Programming Interface. It is a set of rules and protocols that allows different 
+    software applications to communicate with each other. APIs enable the integration of various functionalities 
+    and data from different applications, making software development more efficient and streamlined. -->
+
+<body style="background-color: #212121; color: white">
+    <table>
+        <tr>
+            <th>Value</th>
+            <th>State</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><code>0</code></td>
+            <td><code>UNSENT</code></td>
+            <td>Client has been created. <code>open()</code> not called yet.</td>
+        </tr>
+        <tr>
+            <td><code>1</code></td>
+            <td><code>OPENED</code></td>
+            <td><code>open()</code> has been called.</td>
+        </tr>
+        <tr>
+            <td><code>2</code></td>
+            <td><code>HEADERS_RECEIVED</code></td>
+            <td><code>send()</code> has been called, and headers and status are available.</td>
+        </tr>
+        <tr>
+            <td><code>3</code></td>
+            <td><code>LOADING</code></td>
+            <td>Downloading; <code>responseText</code> holds partial data.</td>
+        </tr>
+        <tr>
+            <td><code>4</code></td>
+            <td><code>DONE</code></td>
+            <td>The operation is complete.</td>
+        </tr>
+    </table>
+</body>
+
+<script>
+    const requestUrl = 'https://api.github.com/users/AalokKrRajwade'
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', requestUrl);
+    // console.log("here");
+    xhr.onreadystatechange = function () {
+        console.log(xhr.readyState);
+        if (xhr.readyState === 4) 
+        {
+            // console.log(this.responseText);
+            // const data = this.responseText;
+            // console.log(typeof data);
+
+            const data = JSON.parse(this.responseText);
+            console.log(typeof data);
+            console.log(data.followers);
+        }
+    }
+    xhr.send();
+</script>
+
+</html>
