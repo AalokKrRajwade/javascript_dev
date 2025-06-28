@@ -1,0 +1,28 @@
+https://www.geeksforgeeks.org/javascript/introduction-object-oriented-programming-javascript/
+
+OOPs Concept in JavaScript:
+Object,	Classes, Abstraction, Encapsulation, Inheritance, Polymorphism
+
+4 pillars: 
+(*) Abstraction: displaying only essential information and hiding the details.
+(*) Encapsulation: The process of wrapping properties and functions within a single unit is known as encapsulation. 
+(*) Inheritance: Unlike most of the OOP languages where classes inherit classes, JavaScript Objects inherit Objects 
+            i.e. certain features (property and methods) of one object can be reused by other Objects.  
+(*) Polymorphism: Polymorphism means the same function with different signatures is called many times. 
+            In real life, for example, a boy at the same time may be a student, a class monitor, etc. 
+            So a boy can perform different operations at the same time.
+
+1. Objects: collection of properties and methods
+ex: Promises, Date, Array, Math, String etc.
+
+The object can be created in two ways in JavaScript:
+a) Object Literal
+b) Object Constructor
+
+2. Classes: Classes are blueprints of an Object. A class can have many Objects because the class is a template while 
+        Objects are instances of the class or the concrete implementation.
+
+Yes, JavaScript has classes! They were introduced in ECMAScript 2015 (ES6) and provide a cleaner and more
+structured way to create objects and manage inheritance. While JavaScript classes are essentially syntactic 
+sugar over its prototype-based inheritance, they make the code more readable and easier to work with.
+
